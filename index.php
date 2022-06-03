@@ -6,6 +6,8 @@
     }
 </style>
 
+<?php header( 'Location: http://rifagit.test/raffle.php' ); ?>
+
 <div class="l-login d-flex justify-content-center align-items-center">
 
     <div class="container">
