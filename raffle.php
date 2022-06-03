@@ -1,6 +1,16 @@
 <?php require( 'includes/header.php' ); ?>
 
-    <div class="l-form d-flex flex-column align-items-center js-box-form">
+    <div class="l-overlay js-overlay"></div>
+
+    <div class="l-setting d-flex justify-content-center align-items-center js-setting">
+        <i class="fa-solid fa-gear u-font-size-36 u-color-folk-white"></i>
+    </div>
+
+    <div class="l-block d-flex justify-content-center align-items-center js-block">
+        <span class="l-block__icon"></span>
+    </div>
+
+    <div class="l-form d-flex flex-column align-items-center js-box-form js-menus">
 
         <span class="l-widget__close js-close">
             <i class="fa-solid fa-circle-xmark u-font-size-36 u-color-folk-white"></i>
@@ -32,11 +42,7 @@
         </div>
     </div>
 
-    <div class="l-setting d-flex justify-content-center align-items-center js-setting">
-        <i class="fa-solid fa-gear u-font-size-36 u-color-folk-white"></i>
-    </div>
-
-    <div class="l-widget d-flex flex-column align-items-center js-widget">
+    <div class="l-widget d-flex flex-column align-items-center js-widget js-menus">
 
         <span class="l-widget__close js-close">
             <i class="fa-solid fa-circle-xmark u-font-size-36 u-color-folk-white"></i>

@@ -1,10 +1,18 @@
 (function() {
     const setting = document.querySelector( '.js-setting' )
     const widget = document.querySelector( '.js-widget' )
-    const close = document.querySelector( '.js-close' )
+    const close = document.getElementsByClassName( 'js-close' )
     const screenshort = document.querySelector( '.js-screenshot' )
     const fillValues = document.querySelector( '.js-fill-values' )
     const boxForm = document.querySelector( '.js-box-form' )
+    const menus = document.getElementsByClassName( 'js-menus' )
+    const block = document.querySelector( '.js-block' )
+    const overlay = document.querySelector( '.js-overlay' ) 
+
+    block.addEventListener( 'click', function() {
+        this.classList.toggle( 'is-active' )
+        overlay.classList.toggle( 'is-active' )
+    })
 
     setting.addEventListener( 'click', function() {
         widget.classList.add( 'is-active' )
@@ -14,10 +22,13 @@
         boxForm.classList.add( 'is-active' )
     })
 
-    close.addEventListener( 'click', function() {
-        widget.classList.remove( 'is-active' )
-        boxForm.classList.remove( 'is-active' )
-    })
+    for( const i of close ) {
+        i.addEventListener( 'click', function() {
+            for( const j of menus ) {
+                j.classList.remove( 'is-active' )
+            }
+        })
+    }
 
     screenshort.addEventListener( 'click', function() {
         widget.classList.remove( 'is-active' )

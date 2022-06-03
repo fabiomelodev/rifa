@@ -11,7 +11,7 @@ $layout-name: 'l-widget';
     visibility: hidden;
     position: fixed;
     background-color: $color-folk-secondary;
-    z-index: 99;
+    z-index: 9999;
 
     &.is-active {
         opacity: 1;

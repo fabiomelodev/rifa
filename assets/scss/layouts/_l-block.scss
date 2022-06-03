@@ -1,0 +1,27 @@
+$layout-name: 'l-block';
+
+.#{$layout-name} {
+    width: 70px;
+    height: 70px;
+    top: 2rem;
+    right: 2rem;
+    transition: all .6s;
+    position: absolute;
+    z-index: 999;
+
+    &__icon {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: 'Font Awesome 6 Free';
+
+        &::before {
+            content: '\f3c1';
+        }
+
+        .is-active & {
+            &::before {
+                content: '\f023';
+            }
+        }
+    }
+}

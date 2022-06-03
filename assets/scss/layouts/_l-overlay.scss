@@ -1,17 +1,16 @@
-$layout-name: 'l-form';
+$layout-name: 'l-overlay';
 
 .#{$layout-name} {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    padding-top: 10rem;
     transition: all .6s;
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    background-color: $color-folk-secondary;
-    z-index: 99999;
+    background-color: transparent;
+    z-index: 99;
 
     &.is-active {
         opacity: 1;
