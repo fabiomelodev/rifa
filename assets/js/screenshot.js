@@ -3,14 +3,20 @@
     const widget = document.querySelector( '.js-widget' )
     const close = document.querySelector( '.js-close' )
     const screenshort = document.querySelector( '.js-screenshot' )
-    
+    const fillValues = document.querySelector( '.js-fill-values' )
+    const boxForm = document.querySelector( '.js-box-form' )
 
     setting.addEventListener( 'click', function() {
         widget.classList.add( 'is-active' )
     })
 
+    fillValues.addEventListener( 'click', function() {
+        boxForm.classList.add( 'is-active' )
+    })
+
     close.addEventListener( 'click', function() {
         widget.classList.remove( 'is-active' )
+        boxForm.classList.remove( 'is-active' )
     })
 
     screenshort.addEventListener( 'click', function() {

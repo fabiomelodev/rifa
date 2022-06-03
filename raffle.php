@@ -1,5 +1,37 @@
 <?php require( 'includes/header.php' ); ?>
 
+    <div class="l-form d-flex flex-column align-items-center js-box-form">
+
+        <span class="l-widget__close js-close">
+            <i class="fa-solid fa-circle-xmark u-font-size-36 u-color-folk-white"></i>
+        </span>
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-10">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <input
+                            class="w-100 border-0 rounded d-block py-2 js-field" 
+                            type="text">
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <input 
+                            class="w-100 border-0 rounded u-font-weight-bold u-color-folk-primary bg-white py-2 js-submit" 
+                            type="submit"
+                            value="Submit">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="l-setting d-flex justify-content-center align-items-center js-setting">
         <i class="fa-solid fa-gear u-font-size-36 u-color-folk-white"></i>
     </div>
@@ -19,12 +51,8 @@
                 screenshot
             </li>
 
-            <li class="l-widget__item u-font-weight-semibold text-center text-capitalize u-font-size-36 u-color-folk-white my-3">
-                print
-            </li>
-
-            <li class="l-widget__item u-font-weight-semibold text-center text-capitalize u-font-size-36 u-color-folk-white my-3">
-                print
+            <li class="l-widget__item u-font-weight-semibold text-center text-capitalize u-font-size-36 u-color-folk-white my-3 js-fill-values">
+                fill values
             </li>
         </ul>
     </div>
