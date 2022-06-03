@@ -1,0 +1,33 @@
+$layout-name: 'l-raffle';
+
+.#{$layout-name} {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-size: 1.8125rem;
+    }
+
+    &__box {
+        width: 650px;
+    }
+
+    &__item {
+        width: 65px;
+        height: 70px;
+        border: 1px solid $color-folk-primary;
+
+        &.is-active::before {
+            content: '';
+            width: 10px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            position: absolute;
+            border-radius: 50px;
+            background-color: cyan;
+        }
+    }
+}

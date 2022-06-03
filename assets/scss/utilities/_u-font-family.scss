@@ -1,0 +1,11 @@
+$utility-name: 'u-font-family';
+
+.#{$utility-name} {
+    &-garamond {
+        font-family: 'Garamond', sans-serif;
+    }
+
+    &-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
