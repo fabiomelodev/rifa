@@ -32,7 +32,7 @@
 
     screenshort.addEventListener( 'click', function() {
         widget.classList.remove( 'is-active' )
-
+        
         setTimeout(function() {
             capture()
         }, 1000)
@@ -42,9 +42,11 @@
 
     function hiddenSetting() {
         setting.classList.add( 'is-disabled' )
+        block.classList.add( 'is-disabled' )
 
         setTimeout(function() {
             setting.classList.remove( 'is-disabled' )
+            block.classList.remove( 'is-disabled' )
         }, 3000)
     }
 

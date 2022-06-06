@@ -465,10 +465,15 @@ html {
   width: 70px;
   height: 70px;
   top: 2rem;
-  right: 2rem;
+  left: calc(720px - 6rem);
   transition: all .6s;
+  opacity: 1;
+  visibility: visible;
   position: absolute;
   z-index: 999; }
+  .l-block.is-disabled {
+    opacity: 0;
+    visibility: hidden; }
   .l-block__icon {
     font-size: 2rem;
     font-weight: 900;
