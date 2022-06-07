@@ -511,14 +511,14 @@ html {
   height: 100vh; }
 
 .l-menu {
-  width: 100%;
+  width: 720px;
   height: 100%;
   top: 0;
   left: 0;
   transition: all .6s;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
