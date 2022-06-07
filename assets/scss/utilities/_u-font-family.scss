@@ -1,6 +1,10 @@
 $utility-name: 'u-font-family';
 
 .#{$utility-name} {
+    &-bebas {
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
     &-garamond {
         font-family: 'Garamond', sans-serif;
     }

@@ -1,0 +1,23 @@
+$layout-name: 'l-notification';
+
+.#{$layout-name} {
+    width: 320px;
+    height: auto;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .6s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    position: absolute;
+    word-break: break-word;
+    background-color: $color-folk-purple;
+
+    &.is-show {
+        top: 50px;
+        opacity: 1;
+        visibility: visible;
+    }
+}

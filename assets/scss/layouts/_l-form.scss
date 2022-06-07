@@ -10,10 +10,10 @@ $layout-name: 'l-form';
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    background-color: $color-folk-secondary;
+    background-color: $color-folk-purple;
     z-index: 99999;
 
-    &.is-active {
+    &.is-show {
         opacity: 1;
         visibility: visible;
     }

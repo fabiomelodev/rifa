@@ -16,6 +16,8 @@ html {
 .u-cursor-pointer {
   cursor: pointer !important; }
 
+.u-font-family-bebas {
+  font-family: 'Bebas Neue', sans-serif; }
 .u-font-family-garamond {
   font-family: 'Garamond', sans-serif; }
 .u-font-family-montserrat {
@@ -483,6 +485,11 @@ html {
     .is-active .l-block__icon::before {
       content: '\f023'; }
 
+.l-close {
+  top: 2rem;
+  right: 2rem;
+  position: absolute; }
+
 .l-form {
   width: 100%;
   height: 100%;
@@ -493,15 +500,99 @@ html {
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  background-color: #5E1B66;
+  background-color: #7412D2;
   z-index: 99999; }
-  .l-form.is-active {
+  .l-form.is-show {
     opacity: 1;
     visibility: visible; }
 
 .l-login {
   width: 100%;
   height: 100vh; }
+
+.l-menu {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .6s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7412D2;
+  z-index: 999999; }
+  .l-menu.is-show {
+    opacity: 1;
+    visibility: visible; }
+  .l-menu__box {
+    width: 70px;
+    height: 70px;
+    top: 2rem;
+    left: 2rem;
+    transition: all .6s;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #41030D; }
+    .l-menu__box.is-disabled {
+      opacity: 0;
+      visibility: hidden; }
+  .l-menu__title {
+    font-size: 44px;
+    font-family: 'bebas Neue';
+    letter-spacing: 4px; }
+  .l-menu__item {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FFF;
+    position: relative;
+    list-style: none;
+    font-size: 1.75rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFF; }
+    .l-menu__dropdown .l-menu__item {
+      margin-bottom: 0;
+      border: 0;
+      font-size: 1.375rem; }
+    .l-menu__item__dropdown::before {
+      content: '\f105';
+      top: 7px;
+      left: -20px;
+      transform: rotate(0deg);
+      transition: all .6s;
+      position: absolute;
+      font-size: 1rem;
+      font-weight: 900;
+      font-family: 'Font Awesome 6 Free'; }
+    .l-menu__item.is-active::before {
+      transform: rotate(90deg); }
+  .l-menu__dropdown {
+    display: none; }
+    .is-active .l-menu__dropdown {
+      display: block; }
+
+.l-notification {
+  width: 320px;
+  height: auto;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .6s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  word-break: break-word;
+  background-color: #7412D2; }
+  .l-notification.is-show {
+    top: 50px;
+    opacity: 1;
+    visibility: visible; }
 
 .l-overlay {
   width: 100%;
@@ -572,10 +663,6 @@ html {
   .l-widget.is-active {
     opacity: 1;
     visibility: visible; }
-  .l-widget__close {
-    top: 2rem;
-    right: 2rem;
-    position: absolute; }
   .l-widget__title {
     font-size: 2rem; }
   .l-widget__item {

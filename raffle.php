@@ -2,45 +2,23 @@
 
     <div class="l-overlay js-overlay"></div>
 
-    <div class="l-setting d-flex justify-content-center align-items-center js-setting">
-        <i class="fa-solid fa-gear u-font-size-36 u-color-folk-white"></i>
-    </div>
+    <!-- menu -->
+    <?php require( 'templates/content-menu.php' ); ?>
+    <!-- end menu -->
+
+    <!-- fill values -->
+    <?php require( 'templates/fill-values.php' ); ?>
+    <!-- end fill values -->
+
+    <!-- notification -->
+    <?php require( 'templates/content-notification.php' ); ?>
+    <!-- end notification -->
 
     <div class="l-block d-flex justify-content-center align-items-center js-block">
         <span class="l-block__icon"></span>
     </div>
 
-    <div class="l-form d-flex flex-column align-items-center js-box-form js-menus">
-
-        <span class="l-widget__close js-close">
-            <i class="fa-solid fa-circle-xmark u-font-size-36 u-color-folk-white"></i>
-        </span>
-
-        <div class="container">
-
-            <div class="row justify-content-center">
-
-                <div class="col-10">
-
-                    <div class="row">
-
-                        <div class="col-12">
-                            <input
-                            class="w-100 border-0 rounded d-block py-2 js-field" 
-                            type="text">
-                        </div>
-
-                        <div class="col-12 mt-3">
-                            <input 
-                            class="w-100 border-0 rounded u-font-weight-bold u-color-folk-primary bg-white py-2 js-submit" 
-                            type="submit"
-                            value="Submit">   
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="l-widget d-flex flex-column align-items-center js-widget js-menus">
 

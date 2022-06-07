@@ -1,29 +1,8 @@
 (function() {
-    const submit = document.querySelector( '.js-submit' )
-
-    submit.addEventListener( 'click', function() {
-        setNumbers()
-    })
-
     function createLocalStorage() {
-        let initialValue = ["0", "1"]
+        let initialValue = ["0"]
         localStorage.setItem( 'numbers', initialValue )
         addValues()
-    }
-
-    function setNumbers() {
-        const field = document.querySelector( '.js-field' )
-        const items = document.getElementsByClassName( 'js-item' )
-
-        numbersCurrent = field.value.split(",")
-
-        for( const i of numbersCurrent ) {
-            for( const j of items ) {
-                if( i == j.dataset.value ) {
-                    j.click()
-                }
-            }
-        }
     }
 
     function addValues() {
