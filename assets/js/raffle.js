@@ -17,9 +17,7 @@
     } else {
         const items = document.getElementsByClassName( 'js-item' )
         const selectedItems = []
-        let updatedValues = []
         let numbersCurrent = addValues()
-        items[60].classList.add( 'is-active' )
     
         for(const i of items ) {
             for( const j of numbersCurrent ) {

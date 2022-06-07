@@ -114,7 +114,7 @@
         }
 
         disableTabs()
-        showNotification( 'Valores preenchidos' )
+        showNotification( 'Valores preenchidos!' )
     }
 
     function showErrandValues( count ) {

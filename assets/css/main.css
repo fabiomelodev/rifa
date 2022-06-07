@@ -632,40 +632,4 @@ html {
       border-radius: 50px;
       background-color: cyan; }
 
-.l-setting {
-  width: 70px;
-  height: 70px;
-  top: 2rem;
-  left: 2rem;
-  transition: all .6s;
-  opacity: 1;
-  visibility: visible;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  position: absolute;
-  background-color: #41030D; }
-  .l-setting.is-disabled {
-    opacity: 0;
-    visibility: hidden; }
-
-.l-widget {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 5rem;
-  transition: all .6s;
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  background-color: #5E1B66;
-  z-index: 9999; }
-  .l-widget.is-active {
-    opacity: 1;
-    visibility: visible; }
-  .l-widget__title {
-    font-size: 2rem; }
-  .l-widget__item {
-    list-style: none; }
-
 /*# sourceMappingURL=main.css.map */

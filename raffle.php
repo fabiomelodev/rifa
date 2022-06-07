@@ -18,29 +18,6 @@
         <span class="l-block__icon"></span>
     </div>
 
-    
-
-    <div class="l-widget d-flex flex-column align-items-center js-widget js-menus">
-
-        <span class="l-widget__close js-close">
-            <i class="fa-solid fa-circle-xmark u-font-size-36 u-color-folk-white"></i>
-        </span>
-
-        <h5 class="l-widget__title u-font-weight-bold text-center text-uppercase u-color-folk-white mb-5 pb-5">
-            Setting
-        </h5>
-
-        <ul>
-            <li class="l-widget__item u-font-weight-semibold text-center text-capitalize u-font-size-36 u-color-folk-white my-3 js-screenshot">
-                screenshot
-            </li>
-
-            <li class="l-widget__item u-font-weight-semibold text-center text-capitalize u-font-size-36 u-color-folk-white my-3 js-fill-values">
-                fill values
-            </li>
-        </ul>
-    </div>
-
     <section class="l-raffle w-100 d-flex flex-column">
 
         <div class="w-100 d-flex justify-content-center align-items-center">
