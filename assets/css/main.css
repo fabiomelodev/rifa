@@ -551,13 +551,13 @@ html {
     border-bottom: 2px solid #FFF;
     position: relative;
     list-style: none;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: 'Bebas Neue', sans-serif;
     color: #FFF; }
     .l-menu__dropdown .l-menu__item {
       margin-bottom: 0;
       border: 0;
-      font-size: 2rem; }
+      font-size: 3rem; }
     .l-menu__item__dropdown::before {
       content: '\f105';
       top: 7px;
