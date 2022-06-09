@@ -50,14 +50,14 @@ $layout-name: 'l-menu';
         border-bottom: 2px solid $color-folk-white;
         position: relative;
         list-style: none;
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         font-family: 'Bebas Neue', sans-serif;
         color: $color-folk-white;
 
         .l-menu__dropdown & {
             margin-bottom: 0;
             border: 0;
-            font-size: 1.375rem;
+            font-size: 2rem;
         }
 
         &__dropdown {
